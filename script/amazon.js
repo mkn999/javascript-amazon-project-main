@@ -1,5 +1,5 @@
 
-const products = [
+/*const products = [
         {
             name:'athletic-cotton-socks-6-pairs',   
             img:'images/products/athletic-cotton-socks-6-pairs.jpg',
@@ -20,7 +20,7 @@ const products = [
         },
 
 
-]
+]; */
 let productshtml = '';
 
 products.forEach((product)=>{
@@ -28,7 +28,7 @@ productshtml = productshtml + `
 <div class="product-container">
           <div class="product-image-container">
             <img class="product-image"
-              src="images/products/athletic-cotton-socks-6-pairs.jpg">
+              src="${product.image}">
           </div>
 
           <div class="product-name limit-text-to-2-lines">
@@ -45,7 +45,7 @@ productshtml = productshtml + `
           </div>
 
           <div class="product-price">
-            <sup>₹</sup> ${product.price}
+            <sup>₹</sup> ${product.priceCents}
           </div>
 
           <div class="product-quantity-container">
